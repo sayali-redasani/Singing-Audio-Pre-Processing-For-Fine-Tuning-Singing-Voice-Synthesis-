@@ -6,6 +6,10 @@ import csv
 import torch
 from transformers import AutoModelForSpeechSeq2Seq, AutoProcessor, pipeline
 
+# Download spotify playlist directly using following command - url of your playlist should be given as parameter. 
+# spotdl urlOfPlaylist
+# MP3 will be downloaded so proceed with 'split_audio' function directly
+
 def download_youtube_audio(link, output_path="temp_audio"):
     """
     Downloads the highest resolution video from YouTube, extracts audio, and saves it as a WAV file.
